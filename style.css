@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #22221f;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 64px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ufa {
+  color: #ff7f50;
+}
+
+.me {
+  color: #f2f2f2;
+}
+
+.social-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ff7f50;
+  text-decoration: none;
+  border: 1px solid #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 150px;
+  text-align: center;
+}
+
+.social-link:hover {
+  background-color: #ff7f50;
+  color: #fff;
+}
