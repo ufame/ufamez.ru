@@ -1,17 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru" class="scroll-smooth">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ufame</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Kirill ufame">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="webmanifest">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-in': 'fadeIn 0.8s ease-out forwards',
+            'slide-up': 'slideUp 0.8s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(24px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body>
-  <div class="container">
-    <h1>
-      <span class="ufa">ufa</span><span class="me">me</span>
-    </h1>
-    <a class="social-link" href="https://t.me/ufamez" target="_blank">telegram</a>
-    <a class="social-link" href="https://github.com/ufame" target="_blank">github</a>
-  </div>
+<body class="bg-[#0d0d0d] text-white min-h-screen flex items-center justify-center font-sans antialiased">
+
+  <main class="flex flex-col items-center gap-8 px-6 py-16 max-w-lg mx-auto text-center">
+
+    <img
+      src="https://avatars.githubusercontent.com/u/90481351?v=4"
+      alt="ufame"
+      width="128"
+      height="128"
+      class="w-28 h-28 rounded-full ring-2 ring-white/10 shadow-2xl opacity-0 animate-fade-in"
+      style="animation-delay: 0.1s"
+    >
+
+    <div class="space-y-3 opacity-0 animate-slide-up" style="animation-delay: 0.25s">
+      <h1 class="text-6xl sm:text-7xl font-black tracking-tight">
+        <span class="bg-gradient-to-r from-orange-400 to-rose-400 bg-clip-text text-transparent">ufa</span><span class="text-white/90">me</span>
+      </h1>
+      <p class="text-lg text-white/50 font-light">Kirill — developer</p>
+    </div>
+
+    <nav class="flex gap-5 opacity-0 animate-slide-up" style="animation-delay: 0.45s">
+      <a
+        href="https://github.com/ufame"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2.5 px-5 py-2.5 rounded-xl border border-white/10 bg-white/[0.03] text-white/70 hover:text-white hover:border-white/25 hover:bg-white/[0.07] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white/5"
+        title="GitHub"
+      >
+        <i class="fa-brands fa-github text-xl"></i>
+        <span class="text-sm font-medium">GitHub</span>
+      </a>
+      <a
+        href="https://t.me/ufamez"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2.5 px-5 py-2.5 rounded-xl border border-white/10 bg-white/[0.03] text-white/70 hover:text-[#26A5E4] hover:border-[#26A5E4]/30 hover:bg-[#26A5E4]/[0.07] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#26A5E4]/10"
+        title="Telegram"
+      >
+        <i class="fa-brands fa-telegram text-xl"></i>
+        <span class="text-sm font-medium">Telegram</span>
+      </a>
+    </nav>
+
+    <footer class="mt-4 text-xs text-white/20 opacity-0 animate-fade-in" style="animation-delay: 0.7s">
+      &copy; 2026 ufame
+    </footer>
+
+  </main>
+
 </body>
 </html>
